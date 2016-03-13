@@ -11,6 +11,10 @@
 }
 */
 
+body {
+    /*color:#fff;*/
+}
+
 section,footer {
     padding:60px 0;
 }
@@ -134,7 +138,7 @@ a:hover {
 }
 
 .testi-name {
-    font-weight: bolder;
+    font-weight: bold;
 }
 
 /* CONTACT
