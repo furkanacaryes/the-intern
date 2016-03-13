@@ -22,12 +22,18 @@ var centical = function() {
 
             $(this).css("margin-left", mleft);
         });
+    },
+    
+    squareGallery = function() {
+        var new_h = $('.gallery .columns').width();
+        $('.gallery .columns').css('height', new_h);
     };
 
 
 $(window).load(function() {
     centical();
     cental();
+    squareGallery();
 
 
     $('.mini-launcher').click(function() {
@@ -42,9 +48,6 @@ $(window).load(function() {
     $(window).resize(function() {
         centical();
         cental();
-
-        var new_h = $('.gallery .columns').width();
-        $('.gallery .columns').css('height', new_h);
-        
+        squareGallery();
     });
 });
